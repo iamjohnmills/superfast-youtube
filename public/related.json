@@ -1,0 +1,145 @@
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "MRsmuDxdBZZqH2DmyI615t98y_g",
+  "nextPageToken": "CAUQAA",
+  "regionCode": "US",
+  "pageInfo": {
+    "totalResults": 104,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "I0FVQW9QzeGbUu1tPD1NT61L848",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "QSmWzxXxX04"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "qrqWlXOKGG9JR6DyOM6oYp2nNLk",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "1Sa1sYrQaaU"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "1Byggl05CkxUwXv7_eBZY3vghI0",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "U7-q1WRaKNg"
+      },
+      "snippet": {
+        "publishedAt": "2006-07-22T11:08:22Z",
+        "channelId": "UClXzLqxblx8EBdOuFIiMYoQ",
+        "title": "Bronski Beat - Smalltown Boy",
+        "description": "Jimmy Sommerville aka Bronski Beat in Smalltown Boy",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/U7-q1WRaKNg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/U7-q1WRaKNg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/U7-q1WRaKNg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "maddyj1980",
+        "liveBroadcastContent": "none",
+        "publishTime": "2006-07-22T11:08:22Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "TzLpnwXgF9_MKX-OsHid6eT1afQ",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "1y3TKv7Chk4"
+      },
+      "snippet": {
+        "publishedAt": "2010-08-11T21:33:35Z",
+        "channelId": "UCkZ-RyyVIOsGZv10nW-Kc5Q",
+        "title": "Kim Wilde - Cambodia (1981) HD 0815007",
+        "description": "HQ-Video. Kim Wilde - Cambodia (1981). Audio-CD-Sound versehen mit Video-Material aus TV-Show. Sound replaced by audio-cd-sound. Full song.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/1y3TKv7Chk4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/1y3TKv7Chk4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/1y3TKv7Chk4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/1y3TKv7Chk4/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/1y3TKv7Chk4/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Kaete0815007",
+        "liveBroadcastContent": "none",
+        "publishTime": "2010-08-11T21:33:35Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "bpOYAyJvVw6pd6LO7nihje8BZWI",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "sjGl-pq4RxQ"
+      },
+      "snippet": {
+        "publishedAt": "2016-03-27T16:39:21Z",
+        "channelId": "UCpNwjJu1WO7jI7Jh3wu9BeA",
+        "title": "Alphaville - Big In Japan (Extended 12'' Version Edit)",
+        "description": "*** MAIS UMA SUPER PRODUÇÃO BY DVJ LECO MIX ***\n\nDeixe o like e seu comentário e se inscreva-se no canal.\nLeave the like and your comment and subscribe to the channel.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/sjGl-pq4RxQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/sjGl-pq4RxQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/sjGl-pq4RxQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/sjGl-pq4RxQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "VJ LECO MIX",
+        "liveBroadcastContent": "none",
+        "publishTime": "2016-03-27T16:39:21Z"
+      }
+    }
+  ]
+}

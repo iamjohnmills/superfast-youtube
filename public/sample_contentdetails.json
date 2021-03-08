@@ -1,0 +1,144 @@
+{
+  "kind": "youtube#videoListResponse",
+  "etag": "VVIrtE9iCsFPY_d78ktsLyLg0RE",
+  "items": [
+    {
+      "kind": "youtube#video",
+      "etag": "b_up4TD-2VyrO-6JF1HZRMQRPe8",
+      "id": "8NO7D5-fmB8",
+      "contentDetails": {
+        "duration": "PT22M31S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "rD5ZOZJGxl5f3BVjmjWvKIQFsnE",
+      "id": "GzQBf9iQYgQ",
+      "contentDetails": {
+        "duration": "PT17M31S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "XowY4Im2s0rjwiYrIK4LS27_I3E",
+      "id": "OvAS8Ba5o1w",
+      "contentDetails": {
+        "duration": "PT8M54S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "gVKdn86hW8ZIXuGzANidFj5I8ck",
+      "id": "AXP4p1w22dA",
+      "contentDetails": {
+        "duration": "PT15M4S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "trt-xlKT111KLdEy6VM0cCwobqs",
+      "id": "P6mdWmP-v58",
+      "contentDetails": {
+        "duration": "PT19M34S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "nRUi8lwfDCjph5-yIQFas4A4ZkI",
+      "id": "a1cnOUlPCx4",
+      "contentDetails": {
+        "duration": "PT10M38S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "Jpqbj8sqQoAgFVUaLOigie4bB5E",
+      "id": "96Ku56lKiX8",
+      "contentDetails": {
+        "duration": "PT10M45S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "regionRestriction": {
+          "blocked": [
+            "CU",
+            "IR",
+            "KP",
+            "SY"
+          ]
+        },
+        "contentRating": {},
+        "projection": "rectangular"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "xL-DzqS2_MgzDfrH5CWiUqonaGc",
+      "id": "_50fAypmeNc",
+      "contentDetails": {
+        "duration": "PT2M34S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "JbIce-4z1G12u9W9WlS_ZPB259A",
+      "id": "j0Z9kiiNmSQ",
+      "contentDetails": {
+        "duration": "PT2M15S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 9,
+    "resultsPerPage": 9
+  }
+}
