@@ -4,13 +4,13 @@
       <input v-model="q" placeholder="Search..." />
     </form>
     <div class="section-search-results">
-      <app-content />
       <div v-if="loading">
         <video-placeholder v-for="index in 10" :key="index" />
       </div>
       <div v-if="done && response">
         <video-item v-for="(item,index) in response" :key="index" :item="item" />
       </div>
+      <app-content />
     </div>
   </div>
 </template>
@@ -30,7 +30,7 @@ export default {
   },
   data(){
     return {
-      q: null,
+      q: 'when the rain begins to fall extended version',
       response: null,
       loading: false,
       done: false,
@@ -52,7 +52,7 @@ export default {
       this.response = null;
       if(this.q == '') return;
       this.loading = true;
-      this.response = await getVideos({
+      await getVideos({
         q: this.q,
         limit: 10,
         api_key: process.env.VUE_APP_YOUTUBE_API_KEY
@@ -75,6 +75,6 @@ export default {
 <style>
 .search { }
 form {  }
-input { padding: 15px 20px; border: 1px solid #ccc; border-radius: 10px; font-size: 18px; width: 100% }
+input { outline: none; padding: 15px 20px; border: 1px solid #ccc; border-radius: 10px; font-size: 18px; width: 100% }
 .section-search-results { padding: 1em 1em 0 1em; }
 </style>

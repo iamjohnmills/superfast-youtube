@@ -1,352 +1,223 @@
 {
-  "kind": "youtube#searchListResponse",
-  "etag": "HgP6fsGHsAvutNqrQXiwxRzC_b8",
-  "nextPageToken": "CAoQAA",
-  "regionCode": "US",
-  "pageInfo": {
-    "totalResults": 1000000,
-    "resultsPerPage": 10
-  },
+  "kind": "youtube#videoListResponse",
+  "etag": "Dy5-D2et1sQPcPsz3-5tsBbFVP8",
   "items": [
     {
-      "kind": "youtube#searchResult",
-      "etag": "o0dIKsXzKZDuMMZjQvxZj69ymKM",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "aahViYznVTQ"
-      },
-      "snippet": {
-        "publishedAt": "2017-10-19T07:00:08Z",
-        "channelId": "UC0KV9nmK85jn90859n8mtVg",
-        "title": "Jermaine Jackson, Pia Zadora - When the Rain Begins to Fall",
-        "description": "Chorus: And when the rain begins to fall You'll ride my rainbow in the sky And I will catch you if you fall You'll never have to ask me why And when the rain ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/aahViYznVTQ/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/aahViYznVTQ/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/aahViYznVTQ/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
+      "kind": "youtube#video",
+      "etag": "iTkUrxyrFGjANv-GnxZ1egiXqdY",
+      "id": "dWSqqckKjVM",
+      "contentDetails": {
+        "duration": "PT1H39M8S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "regionRestriction": {
+          "blocked": [
+            "CU",
+            "IR",
+            "KP",
+            "SY"
+          ]
         },
-        "channelTitle": "JermaineJacksonVEVO",
-        "liveBroadcastContent": "none",
-        "publishTime": "2017-10-19T07:00:08Z"
+        "contentRating": {},
+        "projection": "rectangular"
       }
     },
     {
-      "kind": "youtube#searchResult",
-      "etag": "IAq7NLKGmbDZ-oB2qHwQ9pSwU2s",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "Yg7vxehIX_8"
-      },
-      "snippet": {
-        "publishedAt": "2012-08-15T09:26:23Z",
-        "channelId": "UCOU-nZ3EOGVtTkD8BB6xMZg",
-        "title": "Jermaine Jackson &amp; Pia Zadora - When the rain begins to fall, Lyrics",
-        "description": "Jermaine Jackson & Pia Zadora - When the rain begins to fall (1984) (Lyrics) (FULL HD) Αγόρασε και εσύ ένα μπλουζάκι από το κανάλι: ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/Yg7vxehIX_8/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/Yg7vxehIX_8/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/Yg7vxehIX_8/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
-        },
-        "channelTitle": "Tsolakoglou",
-        "liveBroadcastContent": "none",
-        "publishTime": "2012-08-15T09:26:23Z"
+      "kind": "youtube#video",
+      "etag": "8nKUR5tvKoFuStui-QMJPfLQyic",
+      "id": "L9pp1_en1EE",
+      "contentDetails": {
+        "duration": "PT1H31M28S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "true",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
       }
     },
     {
-      "kind": "youtube#searchResult",
-      "etag": "054q0KXJr2z_B-9vqobsyyu0D9I",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "quw0fpYk7Uk"
-      },
-      "snippet": {
-        "publishedAt": "2017-01-04T18:42:17Z",
-        "channelId": "UCxndKhwYQFoGOgLpIdDkD6Q",
-        "title": "Jermaine Jackson &amp; Pia Zadora - When The Rain Begins To Fall [Official HD Music Video]",
-        "description": "Artist / Előadő: Jermaine Jackson & Pia Zadora Title / Cím: When The Rain Begins To Fall Album / Album: Voyage of the Rock Aliens OST Release / Megjelenés ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/quw0fpYk7Uk/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/quw0fpYk7Uk/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/quw0fpYk7Uk/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
+      "kind": "youtube#video",
+      "etag": "CA45oPqA7ZILGzm8wJ2QS9SS90M",
+      "id": "qPRU8jbZemk",
+      "contentDetails": {
+        "duration": "PT1H33M50S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "regionRestriction": {
+          "blocked": [
+            "CU",
+            "IR",
+            "KP",
+            "SY"
+          ]
         },
-        "channelTitle": "RetroMusicHD",
-        "liveBroadcastContent": "none",
-        "publishTime": "2017-01-04T18:42:17Z"
+        "contentRating": {},
+        "projection": "rectangular"
       }
     },
     {
-      "kind": "youtube#searchResult",
-      "etag": "Jao306VUiWYWL2ZELEo1rpUGr2U",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "55-XGsX_AFs"
-      },
-      "snippet": {
-        "publishedAt": "2019-10-11T15:00:00Z",
-        "channelId": "UCAaX9NjMCos_Qwz3n41eUgg",
-        "title": "When The Rain Begins To Fall - Jermaine Jackson &amp; André Rieu",
-        "description": "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Subscribe to André Rieu's YouTube channel at: http://smarturl.it/5ubscribe Or follow André Rieu at: ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/55-XGsX_AFs/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/55-XGsX_AFs/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/55-XGsX_AFs/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
+      "kind": "youtube#video",
+      "etag": "KoN4mKk03YATgNAGc6hnB6B96FE",
+      "id": "aqy7aJMkOSw",
+      "contentDetails": {
+        "duration": "PT2M29S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "regionRestriction": {
+          "blocked": [
+            "CU",
+            "IR",
+            "KP",
+            "SY"
+          ]
         },
-        "channelTitle": "André Rieu",
-        "liveBroadcastContent": "none",
-        "publishTime": "2019-10-11T15:00:00Z"
+        "contentRating": {},
+        "projection": "rectangular"
       }
     },
     {
-      "kind": "youtube#searchResult",
-      "etag": "3SJKnhVGHXH0sn8KAxrYEiVm598",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "qYbqM3MUZBI"
-      },
-      "snippet": {
-        "publishedAt": "2014-01-19T11:36:23Z",
-        "channelId": "UCCsM17apyuFutXkIG8_fRsA",
-        "title": "Jermaine Jackson &amp; Pia Zadora - When the Rain Begins to Fall (ZDF HD 1984)",
-        "description": "All rights: SME.",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/qYbqM3MUZBI/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/qYbqM3MUZBI/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/qYbqM3MUZBI/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
+      "kind": "youtube#video",
+      "etag": "lALvHvC-KbrG5SaphLoxBuwPBZY",
+      "id": "_7ClxyfgnrA",
+      "contentDetails": {
+        "duration": "PT1H37M16S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "regionRestriction": {
+          "blocked": [
+            "CU",
+            "IR",
+            "KP",
+            "SY"
+          ]
         },
-        "channelTitle": "Andrew Lucas",
-        "liveBroadcastContent": "none",
-        "publishTime": "2014-01-19T11:36:23Z"
+        "contentRating": {},
+        "projection": "rectangular"
       }
     },
     {
-      "kind": "youtube#searchResult",
-      "etag": "FnCFmweBNxDPX4cRaNMhs3XxEEI",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "kS9V5-7vlEA"
-      },
-      "snippet": {
-        "publishedAt": "2012-03-10T15:02:52Z",
-        "channelId": "UCAsW-3TfUHL9yXKCVIi2kGA",
-        "title": "Jermaine Jackson &amp; Pia Zadora - When The Rain Begins To Fall (Extended Version)",
-        "description": "",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/kS9V5-7vlEA/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/kS9V5-7vlEA/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/kS9V5-7vlEA/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
-        },
-        "channelTitle": "RETROREMIXES1",
-        "liveBroadcastContent": "none",
-        "publishTime": "2012-03-10T15:02:52Z"
+      "kind": "youtube#video",
+      "etag": "ykN5r9OMWDmnmrOmam6ewW1fbqs",
+      "id": "UIQOn8sz-bg",
+      "contentDetails": {
+        "duration": "PT38M50S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
       }
     },
     {
-      "kind": "youtube#searchResult",
-      "etag": "Hvb3DXg1oMFb-larqkWPBcqr4Q8",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "rP68VFcMbJ4"
-      },
-      "snippet": {
-        "publishedAt": "2012-07-02T00:05:18Z",
-        "channelId": "UCI3y90BkHUE288hmvnPfr5g",
-        "title": "Pappa Bear - When The Rain Begins To Fall (HQ Sound)",
-        "description": "https://www.facebook.com/MusicHitsPop.",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/rP68VFcMbJ4/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/rP68VFcMbJ4/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/rP68VFcMbJ4/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
-        },
-        "channelTitle": "PoP Tube",
-        "liveBroadcastContent": "none",
-        "publishTime": "2012-07-02T00:05:18Z"
+      "kind": "youtube#video",
+      "etag": "l77UW5TN6pVyg3mE9KjlAB_5gCY",
+      "id": "vJDoY6cC7aE",
+      "contentDetails": {
+        "duration": "PT52M10S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "true",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
       }
     },
     {
-      "kind": "youtube#searchResult",
-      "etag": "wdY_1s3BWMSNmwGI8R9j9lzKjsk",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "WNFOOZt4yv4"
-      },
-      "snippet": {
-        "publishedAt": "2013-02-12T03:22:33Z",
-        "channelId": "UC_pyhITqkHcu9Ve84pdZlPg",
-        "title": "When the rain begins to fall - Jermaine Jackson &amp; Shy´m | subtitulada HD",
-        "description": "Clásico de clásicos. La versión original es con Pia Zadora Esta versión es con Tamara Marthe, más conocida como Shy´m. ~FAIR USE~ Copyright Disclaimer ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/WNFOOZt4yv4/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/WNFOOZt4yv4/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/WNFOOZt4yv4/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
+      "kind": "youtube#video",
+      "etag": "cCWXocNH9jOFkeRqp0wRUpONAg8",
+      "id": "FH2T1lrtJbE",
+      "contentDetails": {
+        "duration": "PT45M18S",
+        "dimension": "2d",
+        "definition": "sd",
+        "caption": "false",
+        "licensedContent": false,
+        "regionRestriction": {
+          "blocked": [
+            "CU",
+            "IR",
+            "KP",
+            "SY"
+          ]
         },
-        "channelTitle": "Lobo estepario",
-        "liveBroadcastContent": "none",
-        "publishTime": "2013-02-12T03:22:33Z"
+        "contentRating": {},
+        "projection": "rectangular"
       }
     },
     {
-      "kind": "youtube#searchResult",
-      "etag": "X0NdIBT-W-pipCSYBGqYwmpz6zc",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "gjOTNLFwZII"
-      },
-      "snippet": {
-        "publishedAt": "2015-01-13T03:07:15Z",
-        "channelId": "UC1b97TrRGwoNWZCZDlIWCMA",
-        "title": "When the Rain Begins to Fall",
-        "description": "Provided to YouTube by Believe SAS When the Rain Begins to Fall · Heavenly Virus ℗ 2007 AFM Records GmbH Released on: 2007-01-26 Author: Jermaine ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/gjOTNLFwZII/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/gjOTNLFwZII/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/gjOTNLFwZII/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
+      "kind": "youtube#video",
+      "etag": "3leBjByhit6gcCeakqSGlwkC-T0",
+      "id": "s_JvKl3OBUY",
+      "contentDetails": {
+        "duration": "PT2H3M51S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "true",
+        "licensedContent": false,
+        "regionRestriction": {
+          "blocked": [
+            "CU",
+            "IR",
+            "KP",
+            "SY"
+          ]
         },
-        "channelTitle": "Heavenly - Topic",
-        "liveBroadcastContent": "none",
-        "publishTime": "2015-01-13T03:07:15Z"
+        "contentRating": {},
+        "projection": "rectangular"
       }
     },
     {
-      "kind": "youtube#searchResult",
-      "etag": "56e8-fvgvNFFIqyHQJ3v0GjRz5E",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "jDNLbzfxrPA"
-      },
-      "snippet": {
-        "publishedAt": "2015-03-12T23:23:36Z",
-        "channelId": "UCTVoi8HwZBMKQtKQlMQijFQ",
-        "title": "Jermaine Jackson &amp; Pia Zadora - When The Rain Begins To Fall (HQ Audio)",
-        "description": "Lyrics : Like the sand can seep right through your fingers so can all your day As those days go by you'll have me there to help you find the way. The way I feel ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/jDNLbzfxrPA/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/jDNLbzfxrPA/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/jDNLbzfxrPA/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
+      "kind": "youtube#video",
+      "etag": "47g5nJa2oM3y_Fhue7qXb2zxGoY",
+      "id": "zJbbgmkpV00",
+      "contentDetails": {
+        "duration": "PT2H26M40S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "regionRestriction": {
+          "blocked": [
+            "AI",
+            "BM",
+            "CU",
+            "FK",
+            "GB",
+            "GG",
+            "GI",
+            "GS",
+            "IE",
+            "IM",
+            "IO",
+            "IR",
+            "JE",
+            "KP",
+            "KY",
+            "MS",
+            "PN",
+            "SH",
+            "SY",
+            "TC",
+            "VG"
+          ]
         },
-        "channelTitle": "Sagone",
-        "liveBroadcastContent": "none",
-        "publishTime": "2015-03-12T23:23:36Z"
+        "contentRating": {},
+        "projection": "rectangular"
       }
     }
-  ]
+  ],
+  "pageInfo": {
+    "totalResults": 10,
+    "resultsPerPage": 10
+  }
 }

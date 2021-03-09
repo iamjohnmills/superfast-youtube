@@ -1,10 +1,10 @@
 <template>
-  <div class="video-item" v-if="is_visible" @click="clickVideo(item)" v-bind:class="{'active':active}">
+  <div class="video-item" @click="clickVideo(item)" v-bind:class="{'active':active}">
     <div class="video-item-img"><img :src="item.snippet.thumbnails.default.url" /></div>
     <div class="video-item-content">
       <div class="video-item-title">{{item.snippet.title | decode }}</div>
       <div class="video-item-date" v-if="date_visible"><small>{{item.snippet.publishedAt | date_since }}</small></div>
-      <div class="video-item-duration" v-if="duration_visible && duration"><small>{{item.contentDetails.duration | duration }}</small></div>
+      <div class="video-item-duration" v-if="duration_visible"><small>{{item.contentDetails.duration | duration }}</small></div>
     </div>
   </div>
 </template>
@@ -20,21 +20,16 @@ export default {
   },
   filters: {
     duration:function(val){
-      try {
-        var match = val.match(/PT(\d+H)?(\d+M)?(\d+S)?/);
-        match = match.slice(1).map(function(x) {
-          if (x != null) {
-              return x.replace(/\D/, '');
-          }
-        });
-        var hours = (match[0] || '');
-        var minutes = (match[1] || '');
-        var seconds = (match[2] || '');
-        seconds = seconds.length == 1 ? '0' + seconds : seconds;
-        return (hours ? hours + ':' : '') + (minutes ? minutes + ':' : '') + seconds;
-      } catch (e) {
-        return false;
+      const reptms = /^PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?$/;
+      let hours = 0, minutes = 0, seconds = 0, totalseconds;
+      if(reptms.test(val)) {
+        var matches = reptms.exec(val);
+        if (matches[1]) hours = Number(matches[1]);
+        if (matches[2]) minutes = Number(matches[2]);
+        if (matches[3]) seconds = Number(matches[3]);
+        totalseconds = hours * 3600  + minutes * 60 + seconds;
       }
+      return new Date(totalseconds * 1000).toISOString().substr(11, 8).replace(/^0(?:0:0?)?/, '');
     },
     decode:function(val){
       const txt = document.createElement("textarea");
