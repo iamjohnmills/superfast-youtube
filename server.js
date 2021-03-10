@@ -1,7 +1,7 @@
 const express = require('express')
 const serveStatic = require('serve-static')
 const path = require('path')
-const got = require('got');
+const axios = require('axios');
 const app = express()
 
 // get env variables
@@ -15,24 +15,32 @@ app.get('/', function (req, res) {
 	res.sendFile(path.join(__dirname, '/dist/index.html'))
 })
 
-const getVideos = async (url_search) => {
-	const response_search = await got(url_search);
-  const search = JSON.parse(response_search.body);
-  const ids = await search.items.filter(item => item.id.videoId).map(item => item.id.videoId);
-  let url_details = 'https://youtube.googleapis.com/youtube/v3/videos?part=contentDetails,statistics&key=' + process.env.YOUTUBE_API_KEY + '&id=' + ids.join('&id=');
-	const response_details = await got(url_details);
-  const details = JSON.parse(response_details.body);
-  const merged = await search.items.filter(search_item => search_item.id.videoId).map(search_item => {
-    const detail_index = details.items.findIndex(detail_item => {
-      return detail_item.id == search_item.id.videoId
+const getVideos = (url_search) => {
+  return new Promise(function(resolve, reject) {
+    axios.get(url_search).then(async function(response_search) {
+      const search = response_search.data;
+      const ids = await search.items.filter(item => item.id.videoId).map(item => item.id.videoId);
+      let url_details = 'https://youtube.googleapis.com/youtube/v3/videos?part=contentDetails,statistics&key=' + process.env.YOUTUBE_API_KEY + '&id=' + ids.join('&id=');
+      axios.get(url_details).then(async function(response_details) {
+        const details = response_details.data;
+        const merged = await search.items.filter(search_item => search_item.id.videoId).map(search_item => {
+          const detail_index = details.items.findIndex(detail_item => {
+            return detail_item.id == search_item.id.videoId
+          });
+          if(detail_index !== -1){
+            search_item.contentDetails = details.items[detail_index].contentDetails;
+            search_item.statistics = details.items[detail_index].statistics;
+          }
+          return search_item;
+        });
+        resolve(merged);
+      }).catch(function(error) {
+        resolve(error.response.data);
+      });
+    }).catch(function(error) {
+      resolve(error.response.data);
     });
-    if(detail_index !== -1){
-      search_item.contentDetails = details.items[detail_index].contentDetails;
-      search_item.statistics = details.items[detail_index].statistics;
-    }
-    return search_item;
   });
-  return merged;
 }
 
 app.get('/related/:related_to/:limit', async function (req, res) {
