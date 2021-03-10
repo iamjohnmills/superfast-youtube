@@ -1,6 +1,5 @@
 <template>
   <div id="app" v-bind:class="'ui-state-'+ui_state">
-
     <div class="container">
       <section class="section-search">
         <search />
@@ -49,34 +48,13 @@ export default {
 * { box-sizing: border-box; }
 html,body { margin: 0; padding: 0; }
 #app { font-family: Avenir, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; color: #2c3e50; background: #fff; }
-
 .container { max-width: 640px; margin: 0 auto; }
-.section-player {  }
 .section-search { padding: 2em 2em 1em 2em; }
-
-  #app.ui-state-0 .section-player { display: none; }
-
-
+#app.ui-state-0 .section-player { display: none; }
 @media only screen and (min-width: 1100px) {
-
-  #app.ui-state-1 .container { position: fixed; background: #fff; left: 0; top: 0; right: 0; bottom: 0; display: flex; min-width: 1000px; max-width: 1200px; }
+  #app.ui-state-1 .container { position: fixed; background: #fff; left: 0; top: 0; right: 0; bottom: 0; display: flex; max-width: 1200px; }
   #app.ui-state-1 .section-search { flex-grow: 1; overflow-y: scroll; }
   #app.ui-state-1 .section-player { flex: 0 0 640px; border-left: 1px solid #ccc; margin-left: -1px; overflow-y: scroll; overflow-x: hidden; }
-
   #app.ui-state-0 .container { width: 640px; }
-
 }
-
-/*
-#app.ui-state-1 .section-search { border-right: 1px solid #ccc; }
-#app.ui-state-1 .section-player { display: block; }
-
-@media only screen and (max-width: 1100px) {
-  .container { display: block; position: relative; width: 600px; margin: 0 auto; }
-  .section-player { border-left: 0;  }
-  .section-search { border-right: 0 !important; }
-}
-*/
-
-
 </style>
