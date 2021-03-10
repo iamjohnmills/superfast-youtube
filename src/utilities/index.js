@@ -11,7 +11,7 @@ export const getVideos = async (options) => {
       //let url_search = 'sample.json';
       const search = await fetchUrl(url_search);
       const ids = await search.items.filter(item => item.id.videoId).map(item => item.id.videoId);
-      let url_details = 'https://youtube.googleapis.com/youtube/v3/videos?part=contentDetails&key=' + options.api_key + '&id='+ids.join('&id=');
+      let url_details = 'https://youtube.googleapis.com/youtube/v3/videos?part=contentDetails,statistics&key=' + options.api_key + '&id='+ids.join('&id=');
       //let url_details = 'sample2.json';
 
       const details = await fetchUrl(url_details);
@@ -21,6 +21,7 @@ export const getVideos = async (options) => {
         });
         if(detail_index !== -1){
           search_item.contentDetails = details.items[detail_index].contentDetails;
+          search_item.statistics = details.items[detail_index].statistics;
         }
         return search_item;
       });
