@@ -22,11 +22,18 @@
         <dd>Video duration is included by merging it with additional endpoint sources</dd>
       </dl>
       <dl>
-        <dt><b>Dependencies</b></dt>
+        <dt><b>Frontend</b></dt>
         <dd>Vue 2</dd>
         <dd>Youtube Data API v3</dd>
         <dd>Youtube iFrame API</dd>
       </dl>
+      <dl>
+        <dt><b>Backend</b></dt>
+        <dd>Node</dd>
+        <dd>Express</dd>
+        <dd>Other: Dotenv, Got</dd>
+      </dl>
+
     </div>
 
 

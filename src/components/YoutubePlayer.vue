@@ -85,6 +85,6 @@ export default {
 }
 </script>
 <style>
-.player { width: 640px; height: 390px; background: #000; display: flex; align-items:center; justify-content: center; }
+.player { width: 640px; height: 390px; max-width: 100%; background: #000; display: flex; align-items:center; justify-content: center; }
 .player:before { content: '\25BA'; color: #fff; font-size: 100px }
 </style>
