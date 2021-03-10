@@ -60,15 +60,17 @@ export default {
         limit: 10,
       }).then(response => {
         this.loading = false;
+        if(response.error){
+          this.$eventHub.$emit('handleError',response.error);
+          return;
+        }
         this.done = true;
         this.response = response;
       }).catch(error => {
-        this.loading = false;
-        this.$eventHub.$emit('handleError',error);
       });
     },
     clickVideo:function(item){
-      this.$eventHub.$emit('setVideoId',item.id.videoId);
+      this.$eventHub.$emit('setVideoId',item);
     },
   }
 }

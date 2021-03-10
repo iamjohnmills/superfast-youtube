@@ -1,6 +1,11 @@
 <template>
   <div>
     <div class="player" ref="youtube_player"></div>
+    <div v-if="item">
+      <div>{{item.snippet.title}}</div>
+      <div>{{item.snippet.channelTitle}}</div>
+      <div>{{item.statistics.viewCount}}</div>
+    </div>
   </div>
 </template>
 <script>
@@ -8,7 +13,8 @@ export default {
   name: 'YoutubePlayer',
   data(){
     return {
-      video_id: null,
+      item: null,
+      //video_id: null,
       player: null,
     }
   },
@@ -28,9 +34,8 @@ export default {
     //window.onPlayerStateChange = this.onPlayerStateChange;
   },
   methods: {
-    setVideoId: function(video_id){
-      this.playlist_id = null;
-      this.video_id = video_id;
+    setVideoId: function(item){
+      this.item = item;
       this.$eventHub.$emit('resetScrollTop');
       this.youTubePlayerChangeVideoId();
     },
@@ -40,11 +45,11 @@ export default {
       document.head.appendChild(script_el);
     },
     onYouTubeIframeAPIReady: async function(){
-      if(!this.video_id && !this.playlist_id) return;
+      if(!this.item) return;
       let options = {
         height: '390', // 390
         width: '640', // 640
-        videoId: this.video_id,
+        videoId: this.item.id.videoId,
         playerVars: {
           'autoplay': 1,
           'autohide': 0,
@@ -76,8 +81,8 @@ export default {
     youTubePlayerChangeVideoId:async function(){
       if(!this.player){
         this.onYouTubeIframeAPIReady();
-      } else if(this.video_id){
-        this.player.loadVideoById(this.video_id);
+      } else if(this.item.id.videoId){
+        this.player.loadVideoById(this.item.id.videoId);
         this.player.playVideo();
       }
     },

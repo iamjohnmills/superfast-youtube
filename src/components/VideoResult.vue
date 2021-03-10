@@ -80,11 +80,11 @@ export default {
     this.$eventHub.$on('setVideoId',this.setVideoId);
   },
   methods: {
-    setVideoId: function(video_id){
-      this.active = this.item.id.videoId == video_id;
+    setVideoId: function(item){
+      this.active = this.item.id.videoId == item.id.videoId;
     },
     clickVideo:function(item){
-      this.$eventHub.$emit('setVideoId',item.id.videoId);
+      this.$eventHub.$emit('setVideoId',item);
     },
   }
 }

@@ -36,8 +36,8 @@ export default {
     this.$eventHub.$on('setVideoId',this.setVideoId);
   },
   methods: {
-    setVideoId: function(video_id){
-      this.video_id = video_id;
+    setVideoId: function(item){
+      this.video_id = item.id.videoId;
       this.getRelatedVideos();
     },
     getRelatedVideos: function(){
