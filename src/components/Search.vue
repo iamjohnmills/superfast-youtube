@@ -55,7 +55,6 @@ export default {
       await getVideos({
         q: this.q,
         limit: 10,
-        api_key: process.env.VUE_APP_YOUTUBE_API_KEY
       }).then(response => {
         this.loading = false;
         this.done = true;

@@ -1,6 +1,22 @@
 export const getVideos = async (options) => {
   return new Promise( async (resolve, reject) => {
     try {
+      let url;
+      if(options.related_to) {
+        url = '/related/' + options.related_to + '/' + options.limit
+      } else if(options.q) {
+        url = '/search/' + options.q + '/' + options.limit
+      }
+      return resolve(await fetchUrl(url));
+    } catch (e) {
+      return reject(e);
+    }
+  })
+}
+
+export const getVideosOld = async (options) => {
+  return new Promise( async (resolve, reject) => {
+    try {
       let url_search = 'https://youtube.googleapis.com/youtube/v3/search?key=' + options.api_key + '&part=snippet&type=video&maxResults=' + options.limit;
       if(options.related_to) {
         url_search = url_search + '&relatedToVideoId=' + options.related_to

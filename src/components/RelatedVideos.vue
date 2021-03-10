@@ -47,7 +47,6 @@ export default {
       getVideos({
         related_to: this.video_id,
         limit: 5,
-        api_key: process.env.VUE_APP_YOUTUBE_API_KEY
       }).then(response => {
         this.response = response;
         this.loading = false;
