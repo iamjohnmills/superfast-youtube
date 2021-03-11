@@ -9,7 +9,7 @@
     <div class="section-search-results">
       <error />
       <div v-if="loading">
-        <video-placeholder v-for="index in 5" :key="index" />
+        <video-placeholder v-for="index in 8" :key="index" />
       </div>
       <div v-if="done && response">
         <video-item v-for="(item,index) in response" :key="index" :item="item" />

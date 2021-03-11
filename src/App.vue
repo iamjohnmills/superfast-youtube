@@ -55,7 +55,7 @@ pre { overflow-x: auto; padding: 20px; border: 2px dashed #ccc; border-radius: 1
 .section-search { padding: 2em 2em 1em 2em; }
 #app.ui-state-0 .section-player { display: none; }
 @media only screen and (min-width: 1100px) {
-  #app.ui-state-1 .container { position: fixed; background: #fff; left: 0; top: 0; right: 0; bottom: 0; display: flex; max-width: 1200px; }
+  #app.ui-state-1 .container { position: fixed; background: #fff; left: 0; top: 0; right: 0; bottom: 0; display: flex; max-width: 1200px; border-left: 1px solid #ccc; border-right: 1px solid #ccc; }
   #app.ui-state-1 .section-search { flex-grow: 1; overflow-y: scroll; }
   #app.ui-state-1 .section-player { flex: 0 0 640px; border-left: 1px solid #ccc; margin-left: -1px; overflow-y: scroll; overflow-x: hidden; }
   #app.ui-state-0 .container { width: 640px; }
