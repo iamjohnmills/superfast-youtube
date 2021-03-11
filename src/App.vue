@@ -38,7 +38,8 @@ export default {
   methods: {
     resetScrollTop: function(){
       this.ui_state = 1;
-      this.$refs.section_player.scrollTop = 0;
+      //this.$refs.section_player.scrollTop = 0;
+      window.scrollTo(0,0);
     },
   }
 }
@@ -53,7 +54,7 @@ pre { overflow-x: auto; padding: 20px; border: 2px dashed #ccc; border-radius: 1
 .mr-1 { margin-right: 1em; }
 #app { font-family: Avenir, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; color: #2c3e50; background: #fff; }
 .container { max-width: 640px; margin: 0 auto; }
-.section-search { padding: 0 2em 1em 2em; }
+.section-search { padding: 2em; }
 #app.ui-state-0 .section-player { display: none; }
 @media only screen and (min-width: 1100px) {
   #app.ui-state-1 .container { display: flex; max-width: 1200px; }

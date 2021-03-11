@@ -1,6 +1,6 @@
 <template>
   <div class="video-item" @click="clickVideo(item)" v-bind:class="{'active':active}">
-    <div class="video-item-img">
+    <div class="video-item-img" v-if="item.snippet">
       <div class="video-item-duration" v-if="duration_visible"><small>{{item.contentDetails.duration | duration }}</small></div>
       <img :src="item.snippet.thumbnails.default.url" />
     </div>
