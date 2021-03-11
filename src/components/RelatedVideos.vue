@@ -47,7 +47,7 @@ export default {
       getVideos({
         related_to: this.video_id,
         limit: 5,
-        use_local_data: true
+        //use_local_data: true
       }).then(response => {
         this.loading = false;
         if(response.error){
