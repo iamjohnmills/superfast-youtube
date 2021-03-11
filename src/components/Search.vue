@@ -60,7 +60,7 @@ export default {
       this.loading = true;
       await getVideos({
         q: this.q,
-        limit: 10,
+        limit: 25,
         //use_local_data: true
       }).then(response => {
         this.loading = false;
@@ -86,5 +86,5 @@ input { outline: none; padding: 10px 15px; border: 1px solid #ccc; color: #2c3e5
 button { border: 1px solid #ccc; border-left: 0; line-height: 1; padding: 10px 15px; cursor: pointer; }
 .svg-icon.search-icon { display: inline-block; position: relative; top: 1px; width: 15px; height: 15px; }
 .search-path { stroke: #4e5963; stroke-width: 2px; }
-.section-search-results { padding: 1em 1em 0 1em; }
+.section-search-results { padding: 1em; }
 </style>

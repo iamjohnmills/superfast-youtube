@@ -6,8 +6,10 @@
     </div>
     <div class="video-item-content">
       <div class="video-item-title">{{item.snippet.title | title }}</div>
-      <div class="video-item-channel"><small>{{item.snippet.channelTitle }}</small></div>
-      <div class="video-item-date" v-if="date_visible"><small>{{item.snippet.publishedAt | date_since }}</small></div>
+        <div class="video-item-meta">
+          <small v-if="date_visible">{{item.snippet.publishedAt | date_since }}</small>
+          <small>{{item.snippet.channelTitle }}</small>
+        </div>
     </div>
   </div>
 </template>
@@ -107,10 +109,11 @@ export default {
 </script>
 
 <style>
-.video-item { cursor: pointer; display: flex; align-items: center; padding: 0.5em 0; }
+.video-item { cursor: pointer; display: flex; align-items: center; padding: 1em; margin: 0 -1em; }
+.video-item-meta small:first-child:after { content: '/'; display: inline-block; margin: 0 0.5em; }
 .video-item-img { position: relative; }
 .video-item-duration { position: absolute; font-weight: bold; bottom: 0; right: 0; background: #000; color: #fff; padding: 0 5px; }
 .video-item-img img { display: block; }
 .video-item-content { padding: 0 20px; font-size: 18px }
-.video-item.active .video-item-title { font-weight: bold; }
+.video-item.active {  }
 </style>

@@ -65,6 +65,6 @@ export default {
 </script>
 
 <style>
-.relatedvideos { padding: 1.5em 2em 1em 2em; border-top: 1px solid #ccc;  }
+.relatedvideos { padding: 1.5em 2em 1em 2em; }
 .relatedvideos p { margin: 0 0 0.5em 0; }
 </style>
