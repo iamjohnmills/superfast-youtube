@@ -17,16 +17,11 @@
         <dd>Superfast video playback and switching between videos</dd>
       </dl>
       <dl>
-        <dt><b>Technical Highlights</b></dt>
-        <dd>Video titles are decoded to show special characters</dd>
-        <dd>Video duration is included by merging it with additional endpoint sources</dd>
-      </dl>
-      <dl>
         <dt><b>Technology</b></dt>
         <dd>Vue 2</dd>
         <dd>Youtube Data API v3</dd>
         <dd>Youtube iFrame API</dd>
-        <dd>Backend: Node, Express, Axios, Dotenv</dd>
+        <dd>Backend: Node, Express, Axios</dd>
       </dl>
     </div>
 
