@@ -94,11 +94,6 @@ export default {
 <style>
 .player { width: 640px; height: 390px; max-width: 100%; background: #000; display: flex; align-items:center; justify-content: center; }
 .player:before { content: '\25BA'; color: #fff; font-size: 100px }
-.player-video-info { padding: 2em 2em 0.5em 2em; }
+.player-video-info { padding: 2em 1em 0.5em 1em; }
 .player-video-title { font-weight: bold; font-size: 22px; margin-bottom: 0.2em }
-/*
-.player-video-content { display: flex }
-.player-video-channel { margin-bottom: 0.2em; flex: 1; }
-.player-video-viewcount { text-align: right; flex: 1; }
-*/
 </style>
