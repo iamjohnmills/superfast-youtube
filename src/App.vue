@@ -47,6 +47,9 @@ export default {
 <style>
 * { box-sizing: border-box; }
 html,body { margin: 0; padding: 0; }
+h2 { margin-bottom: 0; padding-bottom: 0; }
+h2 + p { margin-top: 0; }
+pre { overflow-x: auto; padding: 20px; border: 2px dashed #ccc; border-radius: 10px; }
 #app { font-family: Avenir, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; color: #2c3e50; background: #fff; }
 .container { max-width: 640px; margin: 0 auto; }
 .section-search { padding: 2em 2em 1em 2em; }

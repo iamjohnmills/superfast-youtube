@@ -47,14 +47,17 @@ export default {
       getVideos({
         related_to: this.video_id,
         limit: 5,
+        //use_local_data: true
       }).then(response => {
-        this.response = response;
         this.loading = false;
+        if(response.error){
+          this.$eventHub.$emit('handleError',response.error);
+          return;
+        }
+        this.response = response;
         this.done = true;
         this.$eventHub.$emit('resetScrollTop');
       }).catch(error => {
-        this.loading = false;
-        this.$eventHub.$emit('RelatedVideosError',error);
       });
     },
   }
@@ -62,6 +65,6 @@ export default {
 </script>
 
 <style>
-.relatedvideos { padding: 2em 2em 1em 2em;  }
+.relatedvideos { padding: 1.5em 2em 1em 2em; border-top: 1px solid #ccc;  }
 .relatedvideos p { margin: 0 0 0.5em 0; }
 </style>

@@ -69,7 +69,4 @@ export default {
 
 <style>
 .error { margin-bottom: 2em; }
-h2 { margin-bottom: 0; padding-bottom: 0; }
-h2 + p { margin-top: 0; }
-pre { overflow-x: auto; padding: 20px; border: 2px dashed #ccc; border-radius: 10px; }
 </style>

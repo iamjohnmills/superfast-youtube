@@ -1,10 +1,14 @@
 <template>
   <div class="video-item" @click="clickVideo(item)" v-bind:class="{'active':active}">
-    <div class="video-item-img"><img :src="item.snippet.thumbnails.default.url" /></div>
-    <div class="video-item-content">
-      <div class="video-item-title">{{item.snippet.title | decode }}</div>
-      <div class="video-item-date" v-if="date_visible"><small>{{item.snippet.publishedAt | date_since }}</small></div>
+    <div class="video-item-img">
       <div class="video-item-duration" v-if="duration_visible"><small>{{item.contentDetails.duration | duration }}</small></div>
+      <img :src="item.snippet.thumbnails.default.url" />
+    </div>
+    <div class="video-item-content">
+      <div class="video-item-title">{{item.snippet.title | title }}</div>
+      <!--
+      <div class="video-item-channel"><small>{{item.snippet.channelTitle }}</small></div>-->
+      <div class="video-item-date" v-if="date_visible"><small>{{item.snippet.publishedAt | date_since }}</small></div>
     </div>
   </div>
 </template>
@@ -20,18 +24,24 @@ export default {
   },
   filters: {
     duration:function(val){
-      const reptms = /^PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?$/;
-      let hours = 0, minutes = 0, seconds = 0, totalseconds;
-      if(reptms.test(val)) {
-        var matches = reptms.exec(val);
-        if (matches[1]) hours = Number(matches[1]);
-        if (matches[2]) minutes = Number(matches[2]);
-        if (matches[3]) seconds = Number(matches[3]);
-        totalseconds = hours * 3600  + minutes * 60 + seconds;
+      try {
+        const reptms = /^PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?$/;
+        let hours = 0, minutes = 0, seconds = 0, totalseconds;
+        if(reptms.test(val)) {
+          var matches = reptms.exec(val);
+          if (matches[1]) hours = Number(matches[1]);
+          if (matches[2]) minutes = Number(matches[2]);
+          if (matches[3]) seconds = Number(matches[3]);
+          totalseconds = hours * 3600  + minutes * 60 + seconds;
+        }
+        return new Date(totalseconds * 1000).toISOString().substr(11, 8).replace(/^0(?:0:0?)?/, '');
+      } catch (e) {
+        return '';
+        //console.log(val);
+        //console.log(e);
       }
-      return new Date(totalseconds * 1000).toISOString().substr(11, 8).replace(/^0(?:0:0?)?/, '');
     },
-    decode:function(val){
+    title:function(val){
       const txt = document.createElement("textarea");
       txt.innerHTML = val;
       return txt.value;
@@ -40,26 +50,33 @@ export default {
       const date = new Date(val);
       var seconds = Math.floor((new Date() - date) / 1000);
       var interval = seconds / 31536000;
-      if (interval > 1) {
-        return Math.floor(interval) + " years ago";
+      if (Math.floor(interval) > 1) {
+        const years = Math.floor(interval);
+        return years + ' year' + (years.length !== 1 ? 's' : '') + ' ago';
       }
       interval = seconds / 2592000;
       if (interval > 1) {
-        return Math.floor(interval) + " months ago";
+        const months = Math.floor(interval);
+        return months + ' month' + (months.length !== 1 ? 's' : '') + ' ago';
       }
       interval = seconds / 86400;
       if (interval > 1) {
-        return Math.floor(interval) + " days ago";
+        const days = Math.floor(interval);
+        return days + ' day' + (days.length !== 1 ? 's' : '') + ' ago';
       }
       interval = seconds / 3600;
       if (interval > 1) {
-        return Math.floor(interval) + " hours ago";
+        const hours = Math.floor(interval);
+        return hours + ' hour' + (hours.length !== 1 ? 's' : '') + ' ago';
       }
       interval = seconds / 60;
       if (interval > 1) {
-        return Math.floor(interval) + " minutes ago";
+        const minutes = Math.floor(interval);
+        return minutes + ' minute' + (minutes.length !== 1 ? 's' : '') + ' ago';
       }
-      return Math.floor(seconds) + " seconds ago";
+      seconds = Math.floor(seconds);
+      return seconds + ' second' + (seconds.length !== 1 ? 's' : '') + ' ago';
+      //return Math.floor(seconds) + " seconds ago";
     }
   },
   computed: {
@@ -92,8 +109,8 @@ export default {
 
 <style>
 .video-item { cursor: pointer; display: flex; align-items: center; padding: 0.5em 0; }
-.video-item.first-child {  }
-.video-item.last-child { }
+.video-item-img { position: relative; }
+.video-item-duration { position: absolute; font-weight: bold; bottom: 0; right: 0; background: #000; color: #fff; padding: 0 5px; }
 .video-item-img img { display: block; }
 .video-item-content { padding: 0 20px; font-size: 18px }
 .video-item.active .video-item-title { font-weight: bold; }
