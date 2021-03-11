@@ -6,8 +6,7 @@
     </div>
     <div class="video-item-content">
       <div class="video-item-title">{{item.snippet.title | title }}</div>
-      <!--
-      <div class="video-item-channel"><small>{{item.snippet.channelTitle }}</small></div>-->
+      <div class="video-item-channel"><small>{{item.snippet.channelTitle }}</small></div>
       <div class="video-item-date" v-if="date_visible"><small>{{item.snippet.publishedAt | date_since }}</small></div>
     </div>
   </div>
