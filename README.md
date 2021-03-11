@@ -1,4 +1,5 @@
-# superfast-youtube
+# Superfast YouTube
+A superfast YouTube clone built with Vue.js.
 
 ## Project setup
 ```
