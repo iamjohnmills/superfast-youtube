@@ -61,7 +61,7 @@ export default {
       await getVideos({
         q: this.q,
         limit: 25,
-        use_local_data: true
+        //use_local_data: true
       }).then(response => {
         this.loading = false;
         if(response.error){
