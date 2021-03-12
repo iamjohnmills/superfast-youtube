@@ -50,13 +50,14 @@ export default {
 html,body { margin: 0; padding: 0; }
 h2 { margin-bottom: 0; padding-bottom: 0; }
 h2 + p { margin-top: 0; }
-pre { overflow-x: auto; padding: 20px; border: 2px dashed #ccc; border-radius: 10px; max-width: 460px; }
+pre { overflow-x: auto; padding: 20px; border: 2px dashed #ccc; border-radius: 10px;  }
 .mr-1 { margin-right: 1em; }
 #app { font-family: Avenir, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; color: #2c3e50; background: #fff; }
 .container { max-width: 640px; margin: 0 auto; }
 .section-search { padding: 2em; }
 #app.ui-state-0 .section-player { display: none; }
 @media only screen and (min-width: 1100px) {
+  #app.ui-state-1 pre { max-width: 460px; }
   #app.ui-state-1 .container { display: flex; max-width: 1200px; }
   #app.ui-state-1 .section-search { flex-grow: 1; padding: 2em; }
   #app.ui-state-1 .section-player { flex: 0 0 640px; padding: 2em 0 }
