@@ -34,6 +34,7 @@ export default {
   methods: {
     handleError:function(error){
       this.error = error;
+      this.$eventHub.$emit('setAppStateUI',0);
     },
   }
 }

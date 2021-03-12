@@ -4,7 +4,7 @@
       <section class="section-search">
         <search />
       </section>
-      <section class="section-player" ref="section_player">
+      <section class="section-player">
         <youtube-player />
         <related-videos />
       </section>
@@ -30,15 +30,19 @@ export default {
     }
   },
   beforeDestroy(){
+    this.$eventHub.$off('setAppStateUI',this.setAppStateUI);
     this.$eventHub.$off('resetScrollTop',this.resetScrollTop);
   },
   created(){
     this.$eventHub.$on('resetScrollTop',this.resetScrollTop);
+    this.$eventHub.$on('setAppStateUI',this.setAppStateUI);
   },
   methods: {
+    setAppStateUI: function(val){
+      this.ui_state = val;
+    },
     resetScrollTop: function(){
       this.ui_state = 1;
-      //this.$refs.section_player.scrollTop = 0;
       window.scrollTo(0,0);
     },
   }
