@@ -50,7 +50,7 @@ export default {
 html,body { margin: 0; padding: 0; }
 h2 { margin-bottom: 0; padding-bottom: 0; }
 h2 + p { margin-top: 0; }
-pre { overflow-x: auto; padding: 20px; border: 2px dashed #ccc; border-radius: 10px; }
+pre { overflow-x: auto; padding: 20px; border: 2px dashed #ccc; border-radius: 10px; max-width: 460px; }
 .mr-1 { margin-right: 1em; }
 #app { font-family: Avenir, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; color: #2c3e50; background: #fff; }
 .container { max-width: 640px; margin: 0 auto; }

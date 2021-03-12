@@ -1,12 +1,6 @@
 <template>
   <div>
 
-    <div v-if="error" class="error">
-      <h2 class="error-title">{{error | error_title}}</h2>
-      <p class="error-message" v-if="error.errors[0].reason == 'quotaExceeded'">This is app is so fast that Youtube needed to step in and throttle my API quota to prevent it from breaking the barriers of physical space and time.</p>
-      <pre class="error-raw">{{error}}</pre>
-    </div>
-
     <div>
       <h2>Search Youtube videos, <i>only faster</i>!</h2>
       <p>Try it our for youself by searching, and clicking a video to play it.</p>
