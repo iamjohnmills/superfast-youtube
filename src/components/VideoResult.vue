@@ -110,6 +110,7 @@ export default {
 
 <style>
 .video-item { cursor: pointer; display: flex; align-items: center; padding: 1em; margin: 0 -1em; }
+.video-item-meta { overflow: hidden; max-width: 280px; white-space: nowrap; }
 .video-item-meta small:first-child:after { content: '/'; display: inline-block; margin: 0 0.5em; }
 .video-item-img { position: relative; }
 .video-item-duration { position: absolute; font-weight: bold; bottom: 0; right: 0; background: #000; color: #fff; padding: 0 5px; }
