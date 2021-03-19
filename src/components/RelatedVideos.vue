@@ -46,7 +46,7 @@ export default {
       this.response = null;
       getVideos({
         related_to: this.video_id,
-        limit: 5,
+        limit: 10,
         //use_local_data: true
       }).then(response => {
         this.loading = false;
